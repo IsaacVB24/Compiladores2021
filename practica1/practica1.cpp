@@ -1,3 +1,5 @@
+//@author Isaac Victoria Benavides
+
 #include <iostream>
 #include <stdlib.h>
 
