@@ -1,16 +1,20 @@
+#include <iostream>
+#include <vector>
 
+void funcionDeTransicion(char *estadosSiguientes);
 
-
-class Automata{
-	int cantEstados, numEdoAct, edoIni, edoFin;
-	Automata(){
-		cantEstados = 0;
-		numEdoAct = 0;
-		edoIni = 0;
-		edoFin = 0;
-	}
-public:
-			void transicion(){
-				
-			}
+class AFN{
+	public:
+		std::vector<char> conjuntoDeEstados;
+		std::vector<char> alfabetoDeEntrada;
+		std::vector<char> estadosSiguientes;
+		char estadoInicial;
+		std::vector<char> estadosFinales;
+		AFN(){
+			conjuntoDeEstados = {};
+			alfabetoDeEntrada = {};
+			estadosSiguientes = {};
+			estadoInicial = 'a';
+			estadosFinales = {};
+		}
 };
