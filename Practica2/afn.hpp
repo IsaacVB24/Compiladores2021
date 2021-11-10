@@ -2,7 +2,7 @@
 #include <vector>
 
 void funcionDeTransicion(char *estadosSiguientes);
-
+//AFN representado por tabla de transiciones
 class AFN{
 	public:
 		std::vector<char> conjuntoDeEstados;
@@ -10,6 +10,7 @@ class AFN{
 		std::vector<char> estadosSiguientes;
 		char estadoInicial;
 		std::vector<char> estadosFinales;
+		
 		AFN(){
 			conjuntoDeEstados = {};
 			alfabetoDeEntrada = {};
