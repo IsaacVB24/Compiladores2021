@@ -1,8 +1,10 @@
 #include "afn.hpp"
 #include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
 
-using namespace std;
 
 int main(){
-	
+	AFN nuevo(3);
+	std::cout << nuevo.numeroDeEstados;
 }
