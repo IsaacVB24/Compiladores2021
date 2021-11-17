@@ -11,7 +11,8 @@ class ExpresionRegular{
 		char epsilon = 'E';
 		std::vector<char> listaOperadores = {'(', ')', '+', '|'};
 		ExpresionRegular(string expresion){
-			for(int i=0; i<expresion.length(); i++){
+			tamER = expresion.length();
+			for(int i=0; i<tamER; i++){
 				for(int j=0; j<=3; j++){
 					if(expresion[i] == listaOperadores[j]){
 						operadores.push_back(listaOperadores[j]);
@@ -22,8 +23,5 @@ class ExpresionRegular{
 			for(int k=0; k<=(auxiliarInsercionOperador-1); k++){
 				cout << operadores[k];
 			}
-			operadores = {};
-			operandos = {};
-			tamER = expresion.length();
 		}
 };
