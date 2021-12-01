@@ -2,12 +2,14 @@
 
 
 class Molde{
-	int cantEstados, *edoOrigen, edoDestino;
+	int cantEstados;
 	Molde(){
 		cantEstados = 0;
-		edoOrigen = 0;
-		edoDestino = 0;
 	}
+	typedef struct{
+		int *edoOrigen, edoDestino;
+		char etiqueta;
+	} Transicion;
 	public:
 		void transicionEpsilon(int *edoOrigen, int edoDestino){
 			
