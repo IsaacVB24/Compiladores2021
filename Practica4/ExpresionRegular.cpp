@@ -4,5 +4,5 @@
 using namespace std;
 
 int main(){
-	ExpresionRegular nuevo("(h)+Hola|Mundo"); //9
+	ExpresionRegular nuevo("(h)+(Hola)|(Mundo)");
 }
