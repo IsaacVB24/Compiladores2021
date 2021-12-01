@@ -6,5 +6,4 @@
 
 int main(){
 	AFN nuevo(3);
-	std::cout << nuevo.numeroDeEstados;
 }
