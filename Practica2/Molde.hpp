@@ -2,6 +2,7 @@
 #include <vector>
 
 class Molde{
+	public:
 	int cantEstados;
 	Molde(){
 		cantEstados = 0;
@@ -10,7 +11,6 @@ class Molde{
 		int *edoOrigen, edoDestino;
 		char etiqueta;
 	} Transicion;
-	public:
 		int transicionEpsilon(int edoOrigen, int edoDestino){
 			Transicion epsilon;
 			epsilon.edoDestino = edoDestino;
@@ -32,7 +32,7 @@ class Molde{
 			transicionEpsilon(edoOrigen-1, edoDestino+1);
 			transicionEpsilon(edoOrigen-1, edoOrigen);
 		}
-		void trancisionOR(int leftState, int rightState){
+		void transisionOR(int leftState, int rightState){
 			int origen = leftState-1;
 			int edoFinal = rightState+1;
 			int auxOrigen;
