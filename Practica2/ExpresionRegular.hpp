@@ -20,6 +20,7 @@ class ExpresionRegular{
 					}
 				}
 			}
+			cout << endl << "Los operadores detectados en la expresión regular '" << expresion << "' son: " << endl;
 			for(int k=0; k<=(auxiliarInsercionOperador-1); k++){
 				cout << operadores[k];
 			}
