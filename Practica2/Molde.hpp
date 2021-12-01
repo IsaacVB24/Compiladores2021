@@ -35,7 +35,7 @@ class Molde{
 		void transisionOR(int leftState, int rightState){
 			int origen = leftState-1;
 			int edoFinal = rightState+1;
-			int auxOrigen;
+			int auxOrigen = origen;
 			transicionEpsilon(origen, leftState);
 			transicionEpsilon(auxOrigen, rightState);
 			transicionEpsilon(leftState, edoFinal);

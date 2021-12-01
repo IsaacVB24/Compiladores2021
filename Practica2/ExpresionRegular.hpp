@@ -9,7 +9,7 @@ class ExpresionRegular{
 		std::vector<char> operandos, operadores;
 		int tamER, auxiliarInsercionOperador=0;
 		char epsilon = 'E';
-		std::vector<char> listaOperadores = {'(', ')', '+', '|'};
+		std::vector<char> listaOperadores = {'(', ')', '*', '|'};
 		ExpresionRegular(string expresion){
 			tamER = expresion.length();
 			for(int i=0; i<tamER; i++){
