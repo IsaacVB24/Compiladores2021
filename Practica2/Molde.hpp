@@ -11,8 +11,12 @@ class Molde{
 		char etiqueta;
 	} Transicion;
 	public:
-		void transicionEpsilon(int *edoOrigen, int edoDestino){
-			
+		int transicionEpsilon(int edoOrigen, int edoDestino){
+			Transicion epsilon;
+			epsilon.edoDestino = edoDestino;
+			epsilon.edoOrigen = &epsilon.edoDestino;
+			epsilon.etiqueta = 'E';
+			return epsilon.edoDestino;
 		}
 		void cerradura(){
 			
