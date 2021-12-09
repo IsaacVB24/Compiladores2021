@@ -24,5 +24,6 @@ class ExpresionRegular{
 			for(int k=0; k<=(auxiliarInsercionOperador-1); k++){
 				cout << operadores[k];
 			}
+		cout << expresion;
 		}
 };
